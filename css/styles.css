@@ -28,6 +28,9 @@ body {
   line-height: 1.5;
 }
 
+.logo2 {
+  color: #ef4444;
+}
 /* Visibilidad Accesibilidad */
 .sr-only {
   position: absolute;
