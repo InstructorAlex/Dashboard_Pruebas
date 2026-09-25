@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - DevPlatform</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="dashboard-layout">
+
+  <!-- Header Superior -->
+<!-- En el main-header -->
+  <header class="main-header">
+    <div class="header-left">
+      <!-- Checkbox oculto + Label que actúa de botón hamburguesa -->
+      <input type="checkbox" id="btn-menu" class="menu-checkbox">
+      <label for="btn-menu" class="btn-hamburguesa" aria-label="Abrir menú">☰</label>
+      <div class="logo">Dev<span>Platform</span></div>
+    </div>
+    
+    <div class="user-profile">
+      <span class="user-name">Aprendiz SENA</span>
+      <div class="avatar">AS</div>
+    </div>
+  </header>
+
+  <!-- Sidebar Lateral -->
+  <aside class="sidebar">
+    <nav class="sidebar-nav">
+      <ul>
+        <li><a href="#" class="active"><i>📊</i> Dashboard</a></li>
+        <li><a href="#"><i>📁</i> Proyectos</a></li>
+        <li><a href="#"><i>👥</i> Colaboradores</a></li>
+        <li><a href="#"><i>⚙️</i> Configuración</a></li>
+        <li><a href="index.html" class="nav-logout"><i>🚪</i> Cerrar Sesión</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Área de Contenido Principal -->
+  <main class="main-content">
+    
+    <section class="content-header">
+      <h1>Resumen de Proyectos</h1>
+      <button class="btn btn-primary">+ Nuevo Proyecto</button>
+    </section>
+
+    <!-- Grid de Tarjetas -->
+    <section class="cards-grid">
+      
+      <article class="card">
+        <header class="card-header">
+          <span class="badge badge-active">En Desarrollo</span>
+          <h3>Sistema ERP SENA</h3>
+        </header>
+        <p class="card-description">Módulo de gestión de inventarios y control de insumos en laboratorios de desarrollo.</p>
+        <footer class="card-footer">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">MySQL</span>
+        </footer>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <span class="badge badge-pending">En Revisión</span>
+          <h3>API Rest Pagos</h3>
+        </header>
+        <p class="card-description">Microservicio para procesamiento seguro de transacciones bancarias.</p>
+        <footer class="card-footer">
+          <span class="tech-tag">Node.js</span>
+          <span class="tech-tag">Express</span>
+        </footer>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <span class="badge badge-completed">Completado</span>
+          <h3>Landing Page PWA</h3>
+        </header>
+        <p class="card-description">Portal web accesible e interactivo para la promoción de proyectos formativos.</p>
+        <footer class="card-footer">
+          <span class="tech-tag">HTML5</span>
+          <span class="tech-tag">CSS3</span>
+        </footer>
+      </article>
+
+      <article class="card">
+        <header class="card-header">
+          <span class="badge badge-active">En Desarrollo</span>
+          <h3>App Móvil Inventario</h3>
+        </header>
+        <p class="card-description">Aplicación cliente para el registro rápido de productos mediante código de barras.</p>
+        <footer class="card-footer">
+          <span class="tech-tag">Android</span>
+          <span class="tech-tag">SQLite</span>
+        </footer>
+      </article>
+
+    </section>
+
+  </main>
+
+  <!-- Pie de página del Dashboard -->
+  <footer class="main-footer">
+    <p>&copy; 2026 ADSO - SENA. Evaluación Práctica de Maquetación y Estilos.</p>
+  </footer>
+
+</body>
+</html>

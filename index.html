@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Dev - Iniciar Sesión / Registro</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="auth-body">
+
+  <main class="auth-container">
+    <header class="auth-header">
+      <h1 class="brand-title">Dev<span>Platform</span></h1>
+      <p class="auth-subtitle">Ingresa tus credenciales para acceder al panel de control</p>
+    </header>
+
+    <form action="dashboard.html" method="GET" class="auth-form">
+      
+      <fieldset class="form-group-container">
+        <legend class="sr-only">Datos de Acceso</legend>
+
+        <div class="form-control">
+          <label for="user-email">Correo Electrónico *</label>
+          <input 
+            type="email" 
+            id="user-email" 
+            name="email" 
+            placeholder="ejemplo@sena.edu.co" 
+            required>
+        </div>
+
+        <div class="form-control">
+          <label for="user-password">Contraseña *</label>
+          <input 
+            type="password" 
+            id="user-password" 
+            name="password" 
+            placeholder="••••••••" 
+            minlength="6" 
+            required>
+        </div>
+
+        <div class="form-control">
+          <label for="user-role">Rol de Desarrollo *</label>
+          <select id="user-role" name="role" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            <option value="frontend">Desarrollador Frontend</option>
+            <option value="backend">Desarrollador Backend</option>
+            <option value="fullstack">Desarrollador Fullstack</option>
+          </select>
+        </div>
+
+        <div class="form-control checkbox-control">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">Acepto los términos de servicio y políticas de privacidad</label>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn btn-primary">Ingresar al Dashboard</button>
+    </form>
+  </main>
+
+</body>
+</html>
